@@ -1,0 +1,129 @@
+html {
+    border-left: dashed rgba(0,0,0,0.5);
+    border-right: dashed rgba(0,0,0,0.5);
+    border-width: 10px;
+    background-color: #ffe4c2;
+    height: inherit;
+    min-height: 100%;
+}
+
+@font-face {
+    font-family: 'Perfograma';
+    src: url('../assets/fonts/Perfograma.otf');
+}
+
+@font-face {
+    font-family: 'modern';
+    src: url('../assets/fonts/modern.ttf');
+}
+
+body {
+    font-family: 'Perfograma';
+    text-align: center;
+    background-color: #ffe4c2;
+    height: 100%;
+}
+
+.container {
+    background-color: #ffe4c2;
+    border-left: dashed;
+    border-right: dashed;
+    border-width: 5px;
+    width: auto;
+    height: 100%;
+}
+
+h1 {
+    font-size: 50px;
+    letter-spacing: 15px;
+    word-spacing: 8px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+#nav {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #ffe4c2;
+  height: 100%;
+}
+
+#face {
+    zoom: 2;
+    display: block;
+    margin: auto;
+    height: auto;
+    max-height: 100%;
+    width: 90%;
+    max-width: 100%;
+    opacity: 0;
+    color: red;
+}
+
+#picdiv {
+margin-top: 50px;
+max-height: 90%;
+}
+
+.fa {
+  font-size: 3em;
+  color: black;
+}
+
+#bioDiv {
+text-align: center;
+height: 100vh;
+margin: 100px;
+font-family: lato;
+}
+
+#moreButton {
+display: block;
+text-align: center;
+width: 100%;
+margin-top: 50px;
+
+}
+
+#projDiv {
+text-align: center;
+height: 100vh;
+margin: 100px;
+font-family: lato;
+}
+
+#resDiv {
+text-align: center;
+height: 100vh;
+margin: 100px;
+font-family: lato;
+}
+
+#konDiv {
+text-align: center;
+height: 100vh;
+margin: 100px;
+font-family: lato;
+}
+
+.email {
+  text-align: center;
+  color: black;
+}
+
+footer {
+  display: block;
+  margin-top: 75px;
+  position: relative;
+  bottom:0;
+  text-align: center;
+  width: 100%;
+  font-family: lato;
+}
+
+
+
+
+
+
