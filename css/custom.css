@@ -2,6 +2,7 @@ html {
     border-left: dashed rgba(0,0,0,0.5);
     border-right: dashed rgba(0,0,0,0.5);
     border-width: 10px;
+    /*border-color: red;*/
     background-color: #ffe4c2;
     height: inherit;
     min-height: 100%;
@@ -29,6 +30,7 @@ body {
     border-left: dashed;
     border-right: dashed;
     border-width: 5px;
+    /*border-color: red;*/
     width: auto;
     height: 100%;
 }
@@ -40,6 +42,10 @@ h1 {
     margin-top: 40px;
     margin-bottom: 30px;
     font-weight: bold;
+}
+
+#CW {
+  opacity: .45;
 }
 
 #nav {
