@@ -1,9 +1,8 @@
 html {
-    border-left: dashed rgba(0,0,0,0.5);
-    border-right: dashed rgba(0,0,0,0.5);
-    border-width: 10px;
-    /*border-color: red;*/
     background-color: #ffe4c2;
+    border-left: dashed rgba(0, 0, 0, 0.5);
+    border-right: dashed rgba(0, 0, 0, 0.5);
+    border-width: 10px;
     height: inherit;
     min-height: 100%;
 }
@@ -19,9 +18,9 @@ html {
 }
 
 body {
-    font-family: 'Perfograma';
-    text-align: center;
     background-color: #ffe4c2;
+    font-family: 'montserrat';
+    text-align: center;
     height: 100%;
 }
 
@@ -30,12 +29,12 @@ body {
     border-left: dashed;
     border-right: dashed;
     border-width: 5px;
-    /*border-color: red;*/
     width: auto;
     height: 100%;
 }
 
 h1 {
+    font-family: 'Perfograma';
     font-size: 50px;
     letter-spacing: 15px;
     word-spacing: 8px;
@@ -45,15 +44,28 @@ h1 {
 }
 
 #CW {
-  opacity: .45;
+    opacity: .45;
 }
 
-#nav {
-  font-size: 20px;
-  margin-bottom: 30px;
-  color: #ffe4c2;
-  height: 100%;
+.blink{
+    color: #ffe4c2;
+    font-size: 20px;
 }
+
+
+#nav {
+   /* font-family: 'Perfograma';*/
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+
+span {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
 
 #face {
     zoom: 2;
@@ -68,68 +80,97 @@ h1 {
 }
 
 #picdiv {
-margin-top: 50px;
-max-height: 90%;
+    margin-top: 75px;
+    max-height: 90%;
 }
 
 .fa {
-  font-size: 3em;
-  color: black;
+    font-size: 3em;
+    color: black;
 }
+
+
+.fa:hover {
+    color: red;
+}
+
 
 #bioDiv {
-text-align: center;
-height: 100vh;
-margin: 100px;
-font-family: lato;
+    text-align: left;
+    font-size: 1em;
+    height: 100vh;
+    margin-top: 75px;
+    font-family: ;
 }
 
-#moreButton {
-display: block;
-text-align: center;
-width: 100%;
-margin-top: 50px;
 
+#moreButton {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#moreButton:hover {
+    color: red;
 }
 
 #projDiv {
-text-align: center;
-height: 100vh;
-margin: 100px;
-font-family: lato;
+    text-align: left;
+    height: 100vh;
+    margin-top: 75px;
+    font-size: 1em;
+}
+
+.appLeft {
+    margin-left: 50px;
+    color: black;
+}
+
+.appName {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color:red;
 }
 
 #resDiv {
-text-align: center;
-height: 100vh;
-margin: 100px;
-font-family: lato;
+    text-align: center;
+    height: 100vh;
+    margin-top: 40px;
+}
+#resumeBody {
+    margin-top: 40px;
+}
+
+.download {
+    font-size: .4em;
+    margin-left: 50px;
+    color: gray;
 }
 
 #konDiv {
-text-align: center;
-height: 100vh;
-margin: 100px;
-font-family: lato;
+    text-align: center;
+    font-size: 1em;
+    height: 100vh;
+    margin-top: 75px;
+}
+.email {
+    text-align: center;
 }
 
-.email {
-  text-align: center;
-  color: black;
-}
 
 footer {
-  display: block;
-  margin-top: 75px;
-  position: relative;
-  bottom:0;
-  text-align: center;
-  width: 100%;
-  font-family: lato;
+    display: block;
+    margin-top: 75px;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
 }
-
-
-
-
-
-
