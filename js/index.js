@@ -46,12 +46,6 @@ $(function() {
         $("#bioLong").slideDown(2000, function() {});
     });
 
-    // $("#moreButton").hover(function() {
-    //     $(this).css("color", "red");
-    // }, function() {
-    //     $(this).css("color", "black");
-    // });
-
     //     $("#lessButton").click(function() {
     //         $("#bioLong").hide();
     //         $("#lessButton").hide();
@@ -75,4 +69,4 @@ $(function() {
     });
 
 
-}); //doc ready
+});
