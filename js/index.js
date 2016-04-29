@@ -55,7 +55,7 @@ $(function() {
 
     $("#projekts").click(function() {
         screenClick();
-        $("#projDiv").delay().slideDown(2000, function() {});
+        $(".projDiv").delay().slideDown(2000, function() {});
     });
 
     $("#resume").click(function() {

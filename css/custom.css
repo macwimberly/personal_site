@@ -17,7 +17,14 @@ html {
     src: url('../assets/fonts/modern.ttf');
 }
 
+@media (max-width: 360px) {
+        h1 {font-size: .5em;
+            }
+}
+
+
 body {
+    font-size: 50px;
     background-color: #ffe4c2;
     font-family: 'montserrat';
     text-align: center;
@@ -34,8 +41,8 @@ body {
 }
 
 h1 {
+    /*font-size: .25em;*/
     font-family: 'Perfograma';
-    font-size: 50px;
     letter-spacing: 15px;
     word-spacing: 8px;
     margin-top: 40px;
@@ -43,29 +50,30 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+    margin-top: 0;
+}
+
 #CW {
     opacity: .45;
 }
 
-.blink{
+.blink {
     color: #ffe4c2;
     font-size: 20px;
 }
 
-
 #nav {
-   /* font-family: 'Perfograma';*/
+    /* font-family: 'Perfograma';*/
     margin-bottom: 30px;
     height: 100%;
 }
-
 
 span {
     cursor: pointer;
     text-decoration: none;
     color: black;
 }
-
 
 #face {
     zoom: 2;
@@ -85,59 +93,69 @@ span {
 }
 
 .fa {
-    font-size: 3em;
+    font-size: .75em;
     color: black;
 }
-
 
 .fa:hover {
     color: red;
 }
 
-
 #bioDiv {
     text-align: left;
-    font-size: 1em;
+    font-size: .25em;
     height: 100vh;
     margin-top: 75px;
     font-family: ;
 }
 
 
-#moreButton {
+/*#moreButton {
     display: block;
     text-align: center;
     width: 100%;
     margin-top: 50px;
-}
+}*/
 
-#moreButton:hover {
+
+/*#moreButton:hover {
     color: red;
-}
+}*/
 
-#projDiv {
+.projDiv {
+    font-size: .25em;
     text-align: left;
-    height: 100vh;
-    margin-top: 75px;
-    font-size: 1em;
+    width: 65%;
+    margin: 0 auto;
+
 }
 
-.appLeft {
-    margin-left: 50px;
-    color: black;
+.topRow {
+    margin-top: 75px;
 }
+
+.projDesc {
+    margin-top: 25px;
+}
+
+.projURL {
+    margin-top: 0;
+}
+
+
 
 .appName {
+    font-size: .5em;
     font-weight: bold;
-    font-size: 1.25em;
 }
 
 a {
     color: black;
+    /*font-size: .75em;*/
 }
 
 a:hover {
-    color:red;
+    color: red;
 }
 
 #resDiv {
@@ -145,28 +163,39 @@ a:hover {
     height: 100vh;
     margin-top: 40px;
 }
+
 #resumeBody {
     margin-top: 40px;
 }
 
+#resjpg {
+    display: block;
+    margin: auto;
+    height: auto;
+    max-height: 100%;
+    width: 90%;
+    max-width: 100%;
+}
+
 .download {
-    font-size: .4em;
+    font-size: .25em;
     margin-left: 50px;
     color: gray;
 }
 
 #konDiv {
+    font-size: .25em;
     text-align: center;
-    font-size: 1em;
     height: 100vh;
     margin-top: 75px;
 }
+
 .email {
     text-align: center;
 }
 
-
 footer {
+    font-size: .15em;
     display: block;
     margin-top: 75px;
     position: relative;
