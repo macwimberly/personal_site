@@ -19,17 +19,12 @@ $(function() {
     setTimeout(function() { $(".blink").css('color', 'red'); }, 5100);
     setTimeout(function() { $(".blink").css('color', 'black'); }, 5900);
 
-    console.log("hello");
-
     function screenClick() {
         var button = event.target;
         $(".all").hide();
         $(".blink").css("color", "black");
         $(button).css('color', 'red');
-
     }
-
-
 
     $("#bio").click(function() {
         screenClick();
@@ -70,6 +65,4 @@ $(function() {
         screenClick();
         $("#konDiv").delay().slideDown(2000, function() {});
     });
-
-
 });
