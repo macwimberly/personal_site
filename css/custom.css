@@ -1,60 +1,73 @@
 html {
-    border-left: dashed rgba(0,0,0,0.5);
-    border-right: dashed rgba(0,0,0,0.5);
-    border-width: 10px;
-    /*border-color: red;*/
     background-color: #ffe4c2;
+    border-left: dashed rgba(0, 0, 0, 0.5);
+    border-right: dashed rgba(0, 0, 0, 0.5);
+    border-width: 10px;
     height: inherit;
     min-height: 100%;
 }
-
 @font-face {
     font-family: 'Perfograma';
     src: url('../assets/fonts/Perfograma.otf');
 }
-
 @font-face {
     font-family: 'modern';
     src: url('../assets/fonts/modern.ttf');
 }
-
 body {
-    font-family: 'Perfograma';
-    text-align: center;
+    font-size: 50px;
     background-color: #ffe4c2;
-    height: 100%;
+    font-family: 'montserrat';
+    text-align: center;
+    height: inherit;
 }
-
 .container {
     background-color: #ffe4c2;
     border-left: dashed;
     border-right: dashed;
     border-width: 5px;
-    /*border-color: red;*/
     width: auto;
-    height: 100%;
+    height: inherit;
 }
 
 h1 {
-    font-size: 50px;
+    /*font-size: .25em;*/
+    font-family: 'Perfograma';
     letter-spacing: 15px;
     word-spacing: 8px;
     margin-top: 40px;
     margin-bottom: 30px;
     font-weight: bold;
 }
-
+h2 {
+    margin-top: 0;
+}
 #CW {
-  opacity: .45;
+    opacity: .45;
+    height: 100%;
 }
-
+.blink {
+    color: #ffe4c2;
+    font-size: 20px;
+}
 #nav {
-  font-size: 20px;
-  margin-bottom: 30px;
-  color: #ffe4c2;
-  height: 100%;
+    /* font-family: 'Perfograma';*/
+    margin-bottom: 30px;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
-
+span {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
 #face {
     zoom: 2;
     display: block;
@@ -66,70 +79,118 @@ h1 {
     opacity: 0;
     color: red;
 }
-
 #picdiv {
-margin-top: 50px;
-max-height: 90%;
+    margin-top: 75px;
+    max-height: 90%;
 }
-
-.fa {
-  font-size: 3em;
-  color: black;
-}
-
 #bioDiv {
-text-align: center;
-height: 100vh;
-margin: 100px;
-font-family: lato;
+    text-align: left;
+    font-size: .25em;
+    height: 50vh;
+    margin-top: 75px;
+    font-family: ;
+}
+.projDiv {
+    font-size: .25em;
+    text-align: left;
+    width: 65%;
+    margin: 0 auto;
+}
+.topRow {
+    margin-top: 75px;
+}
+.projDesc {
+    margin-top: 25px;
+}
+.projURL {
+    margin-top: 0;
 }
 
-#moreButton {
-display: block;
-text-align: center;
-width: 100%;
-margin-top: 50px;
-
+.appName {
+    font-size: .5em;
+    font-weight: bold;
 }
-
-#projDiv {
-text-align: center;
-height: 100vh;
-margin: 100px;
-font-family: lato;
+a {
+    color: black;
 }
-
+a:hover {
+    color: red;
+}
 #resDiv {
-text-align: center;
-height: 100vh;
-margin: 100px;
-font-family: lato;
+    font-size: .25em;
+    text-align: center;
+    height: 75vh;
+    margin-top: 40px;
 }
-
+#resumeBody {
+    margin-top: 40px;
+}
+#resjpg {
+    display: block;
+    margin: auto;
+    height: auto;
+    max-height: 100%;
+    width: 90%;
+    max-width: 100%;
+}
 #konDiv {
-text-align: center;
-height: 100vh;
-margin: 100px;
-font-family: lato;
+    font-size: .25em;
+    text-align: center;
+    height: 75vh;
+    margin-top: 75px;
 }
-
+.faIcons {
+    margin-left: 5px;
+    margin-right: 5px;
+}
 .email {
-  text-align: center;
-  color: black;
+    text-align: center;
 }
-
+.fa {
+    color: black;
+    font-size: 40px;
+}
+.fa:hover {
+    color: red;
+}
 footer {
-  display: block;
-  margin-top: 75px;
-  position: relative;
-  bottom:0;
-  text-align: center;
-  width: 100%;
-  font-family: lato;
+    font-size: .15em;
+    display: block;
+    margin-top: 75px;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+@media only screen and (max-width: 414px) {
+    h1 {
+        font-size: .5em;
+        margin-bottom: 0;
+    }
+    .blink {
+        font-size: 2.5vw;
+        padding: 0;
+    }
+    #resjpg{
+      display: none;
+    }
+    #nav {
+      margin-bottom: 0;
+    }
 }
 
 
 
 
 
+/*#moreButton {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}*/
 
+
+/*#moreButton:hover {
+    color: red;
+}*/
