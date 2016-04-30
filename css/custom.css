@@ -42,12 +42,11 @@ h1 {
 h2 {
     margin-top: 0;
 }
-
 #CW {
     opacity: .45;
     height: 100%;
 }
-blink {
+.blink {
     color: #ffe4c2;
     font-size: 20px;
 }
