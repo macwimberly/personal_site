@@ -17,11 +17,6 @@ html {
     src: url('../assets/fonts/modern.ttf');
 }
 
-@media (max-width: 360px) {
-        h1 {font-size: .5em;
-            }
-}
-
 
 body {
     font-size: 50px;
@@ -92,14 +87,6 @@ span {
     max-height: 90%;
 }
 
-.fa {
-    font-size: .75em;
-    color: black;
-}
-
-.fa:hover {
-    color: red;
-}
 
 #bioDiv {
     text-align: left;
@@ -127,7 +114,6 @@ span {
     text-align: left;
     width: 65%;
     margin: 0 auto;
-
 }
 
 .topRow {
@@ -141,8 +127,6 @@ span {
 .projURL {
     margin-top: 0;
 }
-
-
 
 .appName {
     font-size: .5em;
@@ -159,6 +143,7 @@ a:hover {
 }
 
 #resDiv {
+    font-size: .25em;
     text-align: center;
     height: 100vh;
     margin-top: 40px;
@@ -177,11 +162,10 @@ a:hover {
     max-width: 100%;
 }
 
-.download {
-    font-size: .25em;
-    margin-left: 50px;
-    color: gray;
-}
+/*#download {
+    font-size: 1em;
+    text-align: center;
+}*/
 
 #konDiv {
     font-size: .25em;
@@ -190,8 +174,23 @@ a:hover {
     margin-top: 75px;
 }
 
+.faIcons {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 .email {
     text-align: center;
+}
+
+.fa {
+    color: black;
+    font-size: 40px;
+
+}
+
+.fa:hover {
+    color: red;
 }
 
 footer {
@@ -203,3 +202,16 @@ footer {
     text-align: center;
     width: 100%;
 }
+
+@media only screen and (max-width: 414px) {
+
+
+    h1 {
+        font-size: .5em;
+    }
+
+
+
+
+}
+

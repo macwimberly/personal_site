@@ -1,4 +1,5 @@
 $(function() {
+
     $(".bodies").hide();
     $("h1").hide();
 
@@ -27,6 +28,8 @@ $(function() {
         $(button).css('color', 'red');
 
     }
+
+
 
     $("#bio").click(function() {
         screenClick();
