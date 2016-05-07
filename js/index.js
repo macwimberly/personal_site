@@ -1,4 +1,5 @@
 $(function() {
+    var priorButton;
 
     $(".bodies").hide();
     $("h1").hide();
@@ -10,24 +11,27 @@ $(function() {
     $("h1").delay(300).slideDown(1500, function() {});
     $("#nav").delay(1000).slideDown(2000, function() {});
 
-    setTimeout(function() { $(".blink").css('color', 'red'); }, 4550);
-    setTimeout(function() { $(".blink").css('color', '#ffe4c2'); }, 4700);
-    setTimeout(function() { $(".blink").css('color', 'red'); }, 4750);
-    setTimeout(function() { $(".blink").css('color', '#ffe4c2'); }, 4800);
-    setTimeout(function() { $(".blink").css('color', 'red'); }, 4850);
-    setTimeout(function() { $(".blink").css('color', '#ffe4c2'); }, 5000);
-    setTimeout(function() { $(".blink").css('color', 'red'); }, 5100);
-    setTimeout(function() { $(".blink").css('color', 'black'); }, 5900);
+    setTimeout(function() { $("#nav").removeClass('tan').addClass('red'); }, 4550);
+    setTimeout(function() { $("#nav").removeClass('red').addClass('tan'); }, 4700);
+    setTimeout(function() { $("#nav").removeClass('tan').addClass('red'); }, 4750);
+    setTimeout(function() { $("#nav").removeClass('red').addClass('tan'); }, 4800);
+    setTimeout(function() { $("#nav").removeClass('tan').addClass('red'); }, 4850);
+    setTimeout(function() { $("#nav").removeClass('red').addClass('tan'); }, 5000);
+    setTimeout(function() { $("#nav").removeClass('tan').addClass('red'); }, 5100);
+    setTimeout(function() { $("#nav").removeClass('red').addClass('black'); }, 5900);
 
-    function screenClick() {
+    function screenClick(event) {
         var button = event.target;
         $(".all").hide();
-        $(".blink").css("color", "black");
-        $(button).css('color', 'red');
+        $(priorButton).removeClass('red');
+        $(button).addClass('red');
+        priorButton = button;
+        console.log(button);
     }
 
-    $("#bio").click(function() {
-        screenClick();
+    $("#bio").click(function(event) {
+
+        screenClick(event);
         $("#bioLong").hide();
         $("#bioShort").show();
         // $("#moreButton").show();
@@ -35,14 +39,29 @@ $(function() {
         $("#bioDiv").delay().slideDown(2000, function() {});
     });
 
-    $("#moreButton").click(function() {
-        $(event.target).unbind('mouseleave');
-        $("#bioShort").hide();
-        $("#moreButton").hide();
-        $("#moreButton").css("color", "black");
-        // $("#lessButton").show();
-        $("#bioLong").slideDown(2000, function() {});
+    $("#projekts").click(function(event) {
+        screenClick(event);
+        $(".projDiv").delay().slideDown(2000, function() {});
     });
+
+    $("#resume").click(function(event) {
+        screenClick(event);
+        $("#resDiv").delay().slideDown(2000, function() {});
+    });
+
+    $("#kontakt").click(function(event) {
+        screenClick(event);
+        $("#konDiv").delay().slideDown(2000, function() {});
+    });
+
+    // $("#moreButton").click(function() {
+    //     $(event.target).unbind('mouseleave');
+    //     $("#bioShort").hide();
+    //     $("#moreButton").hide();
+    //     $("#moreButton").css("color", "black");
+    //     // $("#lessButton").show();
+    //     $("#bioLong").slideDown(2000, function() {});
+    // });
 
     //     $("#lessButton").click(function() {
     //         $("#bioLong").hide();
@@ -51,18 +70,4 @@ $(function() {
     //         $("#bioShort").slideDown(2000, function() {});
     // });
 
-    $("#projekts").click(function() {
-        screenClick();
-        $(".projDiv").delay().slideDown(2000, function() {});
-    });
-
-    $("#resume").click(function() {
-        screenClick();
-        $("#resDiv").delay().slideDown(2000, function() {});
-    });
-
-    $("#kontakt").click(function() {
-        screenClick();
-        $("#konDiv").delay().slideDown(2000, function() {});
-    });
 });

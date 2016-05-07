@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'Perfograma';
+    src: url('../assets/fonts/Perfograma.otf');
+}
+
+@font-face {
+    font-family: 'modern';
+    src: url('../assets/fonts/modern.ttf');
+}
+
+.red {
+    color: red;
+}
+
+.black {
+    color: black;
+}
+
+.tan {
+    color: #ffe4c2;
+}
+
 html {
     background-color: #ffe4c2;
     border-left: dashed rgba(0, 0, 0, 0.5);
@@ -6,14 +28,7 @@ html {
     height: inherit;
     min-height: 100%;
 }
-@font-face {
-    font-family: 'Perfograma';
-    src: url('../assets/fonts/Perfograma.otf');
-}
-@font-face {
-    font-family: 'modern';
-    src: url('../assets/fonts/modern.ttf');
-}
+
 body {
     font-size: 50px;
     background-color: #ffe4c2;
@@ -21,6 +36,7 @@ body {
     text-align: center;
     height: inherit;
 }
+
 .container {
     background-color: #ffe4c2;
     border-left: dashed;
@@ -39,17 +55,20 @@ h1 {
     margin-bottom: 30px;
     font-weight: bold;
 }
+
 h2 {
     margin-top: 0;
 }
+
 #CW {
     opacity: .45;
     height: 100%;
 }
+
 .blink {
-    color: #ffe4c2;
     font-size: 20px;
 }
+
 #nav {
     /* font-family: 'Perfograma';*/
     margin-bottom: 30px;
@@ -63,11 +82,12 @@ h2 {
     -ms-flex-pack: center;
     justify-content: center;
 }
+
 span {
     cursor: pointer;
     text-decoration: none;
-    color: black;
 }
+
 #face {
     zoom: 2;
     display: block;
@@ -77,31 +97,36 @@ span {
     width: 90%;
     max-width: 100%;
     opacity: 0;
-    color: red;
 }
+
 #picdiv {
     margin-top: 75px;
     max-height: 90%;
+    height: 90vh;
 }
+
 #bioDiv {
     text-align: left;
     font-size: .25em;
-    height: 50vh;
+    height: 90vh;
     margin-top: 75px;
     font-family: ;
 }
+
 .projDiv {
     font-size: .25em;
     text-align: left;
     width: 65%;
     margin: 0 auto;
-}
-.topRow {
+    height: 90vh;
+    color: black;
     margin-top: 75px;
 }
+
 .projDesc {
     margin-top: 25px;
 }
+
 .projURL {
     margin-top: 0;
 }
@@ -110,21 +135,26 @@ span {
     font-size: .5em;
     font-weight: bold;
 }
+
 a {
     color: black;
 }
+
 a:hover {
     color: red;
 }
+
 #resDiv {
     font-size: .25em;
     text-align: center;
-    height: 75vh;
+    height: 90vh;
     margin-top: 40px;
 }
+
 #resumeBody {
     margin-top: 40px;
 }
+
 #resjpg {
     display: block;
     margin: auto;
@@ -133,26 +163,32 @@ a:hover {
     width: 90%;
     max-width: 100%;
 }
+
 #konDiv {
     font-size: .25em;
     text-align: center;
-    height: 75vh;
+    height: 90vh;
     margin-top: 75px;
 }
+
 .faIcons {
     margin-left: 5px;
     margin-right: 5px;
 }
+
 .email {
     text-align: center;
 }
+
 .fa {
     color: black;
     font-size: 40px;
 }
+
 .fa:hover {
     color: red;
 }
+
 footer {
     font-size: .15em;
     display: block;
@@ -162,6 +198,7 @@ footer {
     text-align: center;
     width: 100%;
 }
+
 @media only screen and (max-width: 414px) {
     h1 {
         font-size: .5em;
@@ -171,16 +208,13 @@ footer {
         font-size: 2.5vw;
         padding: 0;
     }
-    #resjpg{
-      display: none;
+    #resjpg {
+        display: none;
     }
     #nav {
-      margin-bottom: 0;
+        margin-bottom: 0;
     }
 }
-
-
-
 
 
 /*#moreButton {
