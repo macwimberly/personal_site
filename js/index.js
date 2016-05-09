@@ -1,5 +1,11 @@
 $(function() {
+
     var priorButton;
+
+    var a = "color1";
+    var b = "color2";
+    var c = "color3";
+
 
     $(".bodies").hide();
     $("h1").hide();
@@ -11,48 +17,56 @@ $(function() {
     $("h1").delay(300).slideDown(1500, function() {});
     $("#nav").delay(1000).slideDown(2000, function() {});
 
-    setTimeout(function() { $("#nav").removeClass('tan').addClass('red'); }, 4550);
-    setTimeout(function() { $("#nav").removeClass('red').addClass('tan'); }, 4700);
-    setTimeout(function() { $("#nav").removeClass('tan').addClass('red'); }, 4750);
-    setTimeout(function() { $("#nav").removeClass('red').addClass('tan'); }, 4800);
-    setTimeout(function() { $("#nav").removeClass('tan').addClass('red'); }, 4850);
-    setTimeout(function() { $("#nav").removeClass('red').addClass('tan'); }, 5000);
-    setTimeout(function() { $("#nav").removeClass('tan').addClass('red'); }, 5100);
-    setTimeout(function() { $("#nav").removeClass('red').addClass('black'); }, 5900);
+    function navBlink(x, y, t) {
+        setTimeout(function() { $("#nav").removeClass(x).addClass(y); }, t);
+    }
 
-    function screenClick(event) {
+    navBlink(a, b, 4550);
+    navBlink(b, a, 4700);
+    navBlink(a, b, 4750);
+    navBlink(b, a, 4800);
+    navBlink(a, b, 4850);
+    navBlink(b, a, 5000);
+    navBlink(a, b, 5100);
+    navBlink(b, c, 5900);
+
+    function screenClick(event, slider) {
         var button = event.target;
         $(".all").hide();
-        $(priorButton).removeClass('red');
-        $(button).addClass('red');
+        $(priorButton).removeClass('color2');
+        $(button).addClass('color2');
         priorButton = button;
-        console.log(button);
+        $(slider).delay().slideDown(2000, function() {});
     }
 
     $("#bio").click(function(event) {
-
-        screenClick(event);
+        screenClick(event, "#bioDiv");
         $("#bioLong").hide();
         $("#bioShort").show();
         // $("#moreButton").show();
         $("#lessButton").hide();
-        $("#bioDiv").delay().slideDown(2000, function() {});
     });
 
     $("#projekts").click(function(event) {
-        screenClick(event);
-        $(".projDiv").delay().slideDown(2000, function() {});
+        screenClick(event, '.projDiv');
     });
 
     $("#resume").click(function(event) {
-        screenClick(event);
-        $("#resDiv").delay().slideDown(2000, function() {});
+        screenClick(event, '#resDiv');
     });
 
     $("#kontakt").click(function(event) {
-        screenClick(event);
-        $("#konDiv").delay().slideDown(2000, function() {});
+        screenClick(event, "#konDiv");
     });
+
+});
+
+
+
+
+
+
+
 
     // $("#moreButton").click(function() {
     //     $(event.target).unbind('mouseleave');
@@ -69,5 +83,3 @@ $(function() {
     //         $("#moreButton").show();
     //         $("#bioShort").slideDown(2000, function() {});
     // });
-
-});

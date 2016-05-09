@@ -8,18 +8,6 @@
     src: url('../assets/fonts/modern.ttf');
 }
 
-.red {
-    color: red;
-}
-
-.black {
-    color: black;
-}
-
-.tan {
-    color: #ffe4c2;
-}
-
 html {
     background-color: #ffe4c2;
     border-left: dashed rgba(0, 0, 0, 0.5);
@@ -54,10 +42,32 @@ h1 {
     margin-top: 40px;
     margin-bottom: 30px;
     font-weight: bold;
+    /*color: red;*/
+    color: red;
 }
 
 h2 {
     margin-top: 0;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+.color1 {
+    color: #ffe4c2;
+}
+
+.color2 {
+    color: red;
+}
+
+.color3 {
+    color: black;
 }
 
 #CW {
@@ -70,7 +80,7 @@ h2 {
 }
 
 #nav {
-    /* font-family: 'Perfograma';*/
+     /*font-family: 'carosello';*/
     margin-bottom: 30px;
     height: 100%;
     display: -webkit-box;
@@ -136,13 +146,6 @@ span {
     font-weight: bold;
 }
 
-a {
-    color: black;
-}
-
-a:hover {
-    color: red;
-}
 
 #resDiv {
     font-size: .25em;
