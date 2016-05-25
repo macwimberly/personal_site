@@ -14,6 +14,27 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-MC4HHP" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MC4HHP');
+    </script>
+    <!-- End Google Tag Manager -->
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -49,60 +70,148 @@
                     <p>A fun web app that sends a player's results to them via mobile text after they complete a word game.</p>
                 </div>
             </div>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2><span><a href="https://tictacdoh.herokuapp.com" target="_blank" class="appName">Tic Tac D'oh!</a></span></h2>
-                        <p>RACK, JS, Bootstrap, jQuery</p>
-                    </div>
-                    <div class="col-md-6 projDesc">
-                        <p>A Simpson's styled game using proper color palate, clean UI, and responsive design.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2><span><a href="https://tictacdoh.herokuapp.com" target="_blank" class="appName">Tic Tac D'oh!</a></span></h2>
+                    <p>RACK, JS, Bootstrap, jQuery, Ion.Sound</p>
+                </div>
+                <div class="col-md-6 projDesc">
+                    <p>A Simpson's styled game using proper color palate, clean UI, and responsive design.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2><span><a href="https://tidybank.herokuapp.com" target="_blank" class="appName">Tidy Bank</a></span></h2>
+                    <p>Ruby on Rails, bcrypt, canva</p>
+                </div>
+                <div class="col-md-6 projDesc">
+                    <p>A web app with user auth for parents and kids that assigns chores and awards them points upon completion of a task.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row all bodies" id="resDiv">
+            <div class="col-md-12">
+                <a href="assets/images/mw.web.res.pdf" target="_blank" class="test"><i class="fa fa-download" aria-hidden="true"></i></a>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <hr class="left">
+                </div>
+                <div class="col-md-4">
+                    <h2 class="resH2">SKILLS</h2></div>
+                <div class="col-md-4">
+                    <hr class="right">
+                </div>
+            </div>
+            <div class="row resInfo">
+                <div class="col-md-6">
+                    <ul>
+                        <li><span class="bold">Front-end:</span> HTML, CSS, JavaScript, jQuery, Angular, Bootstrap</li>
+                        <li><span class="bold">Tools:</span> CLI, Git, Github, Rspec, Mocha, TDD, wireframes, ERDs, Microsoft Office Suite</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 rightRes">
+                    <ul>
+                        <li><span class="bold">Back-end:</span> MVC, Node.js w/Express, Ruby, Rails, Active Record, MySQL, NoSQL, MongoDB, APIs, User Authentication, AJAX, Mongoose, Heroku</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <hr class="left">
+                </div>
+                <div class="col-md-4">
+                    <h2 class="resH2">EDUCATION &amp; LICENSES</h2></div>
+                <div class="col-md-4">
+                    <hr class="right">
+                </div>
+            </div>
+            <div class="row resInfo">
+                <div class="col-md-6">
+                    <div class="elLeft">
+                        <h3>University of California, Santa Cruz</h3>
+                        <ul>
+                            <li>Bachelor of Science, Philosophy, 2006</li>
+                        </ul>
+                        <h3>Related Course Work</h3>
+                        <ul>
+                            <li>Computer Science 101</li>
+                            <li>2D Design: Color + Composition</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2><span><a href="https://tidybank.herokuapp.com" target="_blank" class="appName">Tidy Bank</a></span></h2>
-                        <p>Ruby on Rails, bcrypt, canva</p>
-                    </div>
-                    <div class="col-md-6 projDesc">
-                        <p>A web app with user auth for parents and kids that assigns chores and awards them points upon completion of a task.</p>
-                    </div>
-                </div>
-                </div>
-                <div class="row all bodies" id="resDiv">
-                    <div class="col-md-12">
-                        <a href="assets/images/mw.web.res.pdf" target="_blank"><i class="fa fa-download " aria-hidden="true" id="download"></i></a>
-                    </div>
-                    <div class="col-md-12">
-                        <div id="resumeBody" class="">
-                            <img src="assets/images/res.partial.jpg" id="resjpg" class="">
-                        </div>
-                    </div>
-                </div>
-
-            <div class="row all bodies" id="konDiv">
-                <div class="col-md-12">
-                    <div id="kontaktBody" class=" ">
-                        <p>Web Developer</p>
-                        <p>Austin, TX</p>
-                        <p><span><a href="mailto:mac@macwimberly.com?subject=You are awesome!" class="email">mac@macwimberly.com</a></span></p>
-                        <p>415 425.0693</p>
-                        <a href="https://github.com/macwimberly" target="_blank"><i class="fa fa-github faIcons"></i></a>
-                        <a href="https://www.facebook.com/john.m.wimberly" target="_blank"><i class="fa fa-facebook-square faIcons"></i></a>
-                        <a href="https://www.linkedin.com/in/macwimberly" target="_blank"><i class="fa fa-linkedin-square faIcons"></i></a>
+                <div class="col-md-6 rightRes">
+                    <div class="elRight">
+                        <h3>General Assembly</h3>
+                        <ul>
+                            <li>Web Development Immersive, Nov 2015 - Mar 2016</li>
+                        </ul>
+                        <h3>FINRA Series 7 &amp; 66</h3>
+                        <ul>
+                            <li>General Securities Representative Qualification Examination</li>
+                            <li>NASAA Uniform Combined State Law Examination</li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <footer>
-                        <p id="CW">Design: Mac Wimberly 2016</p>
-                    </footer>
+                <div class="col-md-4">
+                    <hr class="left">
+                </div>
+                <div class="col-md-4">
+                    <h2 class="resH2">EXPERIENCE</h2></div>
+                <div class="col-md-4">
+                    <hr class="right">
+                </div>
+            </div>
+            <div class="row resInfo">
+                <div class="col-md-6">
+                    <p class="coName"><span>Residology Inc.</span>
+                        <span>- Austin</span>
+                    </p>
+                    <p>
+                        <span class="title">Web &amp; Financial Consultant  ||  Oct. 2014 - Present</span>
+                    </p>
+                    <p>
+                      Residology Inc. is Texas based custom and furnished housing company which recently expanded to Austin.
+                    </p>
+                    <p>Provide web development  and general financial support. Daily responsibilities include updates to existing company website, implementation and management of Google SEO/SEM relationship, building reporting templates and processes with MS Office suite. Compilation of tax docs and creation of quarterly forecasts. </p>
+                </div>
+                <div class="col-md-6 rightRes">
+                    <p class="coName"><span>Merrill Lynch Private Investments</span>
+                        <span>- San Francisco</span>
+                    </p>
+                    <p>
+                        <span class="title">Senior Client Relationship Assoc.  ||  Sept. 2007 - Aug. 2014</span>
+                    </p>
+                    <p>ML Private Banking &amp; Investment Group provides diverse investment services for client's in the ultra high net-worth segment with portfolios ranging from $10-100M+.</p>
+                    <p>Worked on elite asset management team as licensed investment representative and lead point of contact for all client communications &amp; transactions. Primary responsibility was establishing, maintaining, and enhancing relationship between team and external clients. Regular duties included quarterly client meetings, performance reporting using MS Office Suite, market orders &amp; portfolio rebalancing, domestic and international compliance, market commentary, capital calls &amp; distributions, fee agreements, collateralized loans, creation of investment proposals for new and existing clients, new client onboarding, web portal support.</p>
                 </div>
             </div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-        <script src="js/index.js"></script>
+        <div class="row all bodies" id="konDiv">
+            <div class="col-md-12">
+                <div id="kontaktBody" class=" ">
+                    <p>Web Developer</p>
+                    <p>Austin, TX</p>
+                    <p><span><a href="mailto:mac@macwimberly.com?subject=You are awesome!" class="email">mac@macwimberly.com</a></span></p>
+                    <p>415 425.0693</p>
+                    <a href="https://github.com/macwimberly" target="_blank"><i class="fa fa-github faIcons"></i></a>
+                    <a href="https://www.facebook.com/john.m.wimberly" target="_blank"><i class="fa fa-facebook-square faIcons"></i></a>
+                    <a href="https://www.linkedin.com/in/macwimberly" target="_blank"><i class="fa fa-linkedin-square faIcons"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <footer>
+                    <p id="CW">Design: Mac Wimberly 2016</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

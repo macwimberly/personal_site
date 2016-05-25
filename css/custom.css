@@ -48,7 +48,37 @@ h1 {
 
 h2 {
     margin-top: 0;
+    text-align: left;
+    font-size: 2em;
 }
+
+h3 {
+    text-align: left;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+hr {
+    border-color: black;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 35px;
+}
+
+
+/*hr.left {
+
+
+  width: 80%;
+
+}
+
+hr.right {
+  ;
+  width: 80%;
+}*/
 
 a {
     color: black;
@@ -56,6 +86,10 @@ a {
 
 a:hover {
     color: red;
+}
+
+a:visited {
+    color: black;
 }
 
 .color1 {
@@ -79,8 +113,12 @@ a:hover {
     font-size: 20px;
 }
 
+p::selection {
+    color: green;
+}
+
 #nav {
-     /*font-family: 'carosello';*/
+    /*font-family: 'carosello';*/
     margin-bottom: 30px;
     height: 100%;
     display: -webkit-box;
@@ -96,6 +134,11 @@ a:hover {
 span {
     cursor: pointer;
     text-decoration: none;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 1.25em;
 }
 
 #face {
@@ -144,28 +187,59 @@ span {
 .appName {
     font-size: .5em;
     font-weight: bold;
+    text-align: left;
 }
-
 
 #resDiv {
     font-size: .25em;
-    text-align: center;
+    text-align: left;
     height: 90vh;
+    margin: 0 auto;
     margin-top: 40px;
+    width: 70%;
 }
+
 
 #resumeBody {
     margin-top: 40px;
 }
 
-#resjpg {
-    display: block;
-    margin: auto;
-    height: auto;
-    max-height: 100%;
-    width: 90%;
-    max-width: 100%;
+.resH2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 25px;
 }
+
+ul {
+  padding-left: 13px;
+}
+
+/*.elLeft {
+  margin-left: 35px;
+}
+
+.elRight {
+  margin-left: 15px;
+
+}*/
+
+.resInfo {
+    margin-top: 0px;
+}
+
+
+.coName {
+    font-size: 1.35em;
+    font-weight: bold;
+    margin-bottom: 0;
+
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.2em
+}
+
 
 #konDiv {
     font-size: .25em;
@@ -190,6 +264,11 @@ span {
 
 .fa:hover {
     color: red;
+}
+
+.fa-download {
+    text-align: center;
+    width: 100%;
 }
 
 footer {
