@@ -160,14 +160,15 @@ span {
 
 #bioDiv {
     text-align: left;
-    font-size: .25em;
+    font-size: .35em;
     height: 90vh;
     margin-top: 75px;
     font-family: ;
+    text-indent: 50px;
 }
 
 .projDiv {
-    font-size: .25em;
+    font-size: .35em;
     text-align: left;
     width: 65%;
     margin: 0 auto;
@@ -242,7 +243,7 @@ ul {
 
 
 #konDiv {
-    font-size: .25em;
+    font-size: .35em;
     text-align: center;
     height: 90vh;
     margin-top: 75px;
