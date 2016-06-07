@@ -10,6 +10,7 @@
 
 html {
     background-color: #ffe4c2;
+    /*background-color: #FDF9F0;*/
     border-left: dashed rgba(0, 0, 0, 0.5);
     border-right: dashed rgba(0, 0, 0, 0.5);
     border-width: 10px;
@@ -27,6 +28,8 @@ body {
 
 .container {
     background-color: #ffe4c2;
+    /*background-color: #FDF9F0;*/
+
     border-left: dashed;
     border-right: dashed;
     border-width: 5px;
