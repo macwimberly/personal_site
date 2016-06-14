@@ -43,8 +43,18 @@ $(function() {
         screenClick(event, "#bioDiv");
         $("#bioLong").hide();
         $("#bioShort").show();
-        // $("#moreButton").show();
-        $("#lessButton").hide();
+        // $("#lessButton").hide();
+        // $("#bioShort").hide();
+        // $("#bioLong").show();
+
+    });
+
+    $("#moreButton").click(function(event){
+      // screenClick(event, '#moreButton');
+      $("#bioShort").hide();
+      $("#bioLong").slideDown(2000, function() {});
+
+
     });
 
     $("#projekts").click(function(event) {
