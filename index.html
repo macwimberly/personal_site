@@ -11,7 +11,6 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/custom.css" />
     <title>MAC WIMBERLY</title>
-
 </head>
 
 <body>
@@ -37,6 +36,27 @@
     </script>
     <!-- End Google Tag Manager -->
     <div class="container">
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Wire Frame vs. HTML/CSS</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6"><img src="assets/images/wireframe.jpg"></div>
+                            <div class="col-md-6">
+                                <a href=""><img src="assets/images/realsite.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-12">
                 <h1>MAC WIMBERLY</h1>
@@ -44,7 +64,7 @@
         </div>
         <div class="row color1" id="nav">
             <div class="col-md-3 squash"><span id="bio" class="blink squash">BIO</span></div>
-            <div class="col-md-3 squash"><span id="projekts" class="blink">APPS</span></div>
+            <div class="col-md-3 squash"><span id="projekts" class="blink">CODE</span></div>
             <div class="col-md-3 squash"><span id="resume" class="blink">RESUME</span></div>
             <div class="col-md-3 squash"><span id="kontakt" class="blink">KONTAKT</span></div>
         </div>
@@ -79,8 +99,17 @@
         <div class="row projDiv all bodies">
             <div class="row">
                 <div class="col-md-6">
+                    <h2><span><a href="" data-toggle="modal" data-target="#myModal" target="_blank" class="appName">Wireframe to HTML/CSS</a></span></h2>
+                    <p>HTML/CSS, Bootstrap, jQuery, Smartmenus.js, AJAX, PHP</p>
+                </div>
+                <div class="col-md-6">
+                    <p>A presentation layer built from a wire frame. A jQuery library was used for the sub menu drop down as they are no longer native to Bootstrap. Ajax and PHP are utilized for form submission.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
                     <h2><span><a href="https://textlibs.herokuapp.com" target="_blank" class="appName">Text Libs</a></span></h2>
-                    <p>Node.js w/Express, MongoDB, Twilio SMS API</p>
+                    <p>Node.js w/Express, MongoDB, AJAX, Twilio SMS API</p>
                 </div>
                 <div class="col-md-6 projDesc">
                     <p>A fun web app that sends a player's results via mobile text after a word game is completed.</p>
@@ -227,6 +256,7 @@
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 
