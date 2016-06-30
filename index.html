@@ -46,8 +46,8 @@
                     </div>
                     <div class="modal-body">
                         <div class="row">
-                            <div class="col-md-6"><img src="assets/images/wireframe.jpg"></div>
-                            <div class="col-md-6">
+                            <div class="col-sm-6"><img src="assets/images/wireframe.jpg"></div>
+                            <div class="col-sm-6">
                                 <a href=""><img src="assets/images/realsite.jpg"></a>
                             </div>
                         </div>
@@ -63,10 +63,10 @@
             </div>
         </div>
         <div class="row color1" id="nav">
-            <div class="col-md-3 squash"><span id="bio" class="blink squash">BIO</span></div>
-            <div class="col-md-3 squash"><span id="projekts" class="blink">CODE</span></div>
-            <div class="col-md-3 squash"><span id="resume" class="blink">RESUME</span></div>
-            <div class="col-md-3 squash"><span id="kontakt" class="blink">KONTAKT</span></div>
+            <div class="col-md-3 squash"><span id="bio" class="blink squash pointer">BIO</span></div>
+            <div class="col-md-3 squash"><span id="projekts" class="blink pointer ">CODE</span></div>
+            <div class="col-md-3 squash"><span id="resume" class="blink pointer">RESUME</span></div>
+            <div class="col-md-3 squash"><span id="kontakt" class="blink pointer">KONTAKT</span></div>
         </div>
         <div class="row all" id="picDiv">
             <div class="col-md-12">
@@ -97,40 +97,63 @@
             </div>
         </div>
         <div class="row projDiv all bodies">
-            <div class="row">
+            <div class="row projLong">
                 <div class="col-md-6">
-                    <h2><span><a href="" data-toggle="modal" data-target="#myModal" target="_blank" class="appName">Wireframe to HTML/CSS</a></span></h2>
+                    <h2><span class="appName">Wireframe to HTML/CSS</span>
+                    <span><a href="" data-toggle="modal" data-target="#myModal" target="_blank" class=""><i class="fa fa-external-link-square projectFA" aria-hidden="true"></i></a></span>
+                    <span><a href="https://github.com/macwimberly/wireframe_to_html/blob/master/index.html" target="_blank"><i class="fa fa-github projectFA"></i></a></span>
+                    </h2>
                     <p>HTML/CSS, Bootstrap, jQuery, Smartmenus.js, AJAX, PHP</p>
                 </div>
                 <div class="col-md-6">
                     <p>A presentation layer built from a wire frame. A jQuery library was used for the sub menu drop down as they are no longer native to Bootstrap. Ajax and PHP are utilized for form submission.</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row projShort">
                 <div class="col-md-6">
-                    <h2><span><a href="https://textlibs.herokuapp.com" target="_blank" class="appName">Text Libs</a></span></h2>
+                    <h2>
+                    <span class="appName">Text Libs</span>
+                    <span><a href="https://textlibs.herokuapp.com"  target="_blank" class=""><i class="fa fa-external-link-square projectFA" aria-hidden="true"></i></a></span>
+                    <span><a href="https://github.com/macwimberly/text_libs/blob/master/public/javascripts/main.js" target="_blank"><i class="fa fa-github projectFA"></i></a></span>
+                    </h2>
                     <p>Node.js w/Express, MongoDB, AJAX, Twilio SMS API</p>
                 </div>
                 <div class="col-md-6 projDesc">
                     <p>A fun web app that sends a player's results via mobile text after a word game is completed.</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row projShort">
                 <div class="col-md-6">
-                    <h2><span><a href="https://tictacdoh.herokuapp.com" target="_blank" class="appName">Tic Tac D'oh!</a></span></h2>
+                    <h2><span class="appName">Tic Tac D'oh!</span>
+                    <span><a href="https://tictacdoh.herokuapp.com"  target="_blank" class=""><i class="fa fa-external-link-square projectFA" aria-hidden="true"></i></a></span>
+                    <span><a href="https://github.com/macwimberly/tic_tac_doh/blob/master/public/js/main.js" target="_blank"><i class="fa fa-github projectFA"></i></a></span></h2>
                     <p>RACK, JS, Bootstrap, jQuery, Ion.Sound</p>
                 </div>
                 <div class="col-md-6 projDesc">
                     <p>A Simpson's styled game using proper color palate, clean UI and responsive design.</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row projShort">
                 <div class="col-md-6">
-                    <h2><span><a href="https://tidybank.herokuapp.com" target="_blank" class="appName">Tidy Bank</a></span></h2>
+                    <h2><span class="appName">Tidy Bank</span>
+                    <span><a href="https://tidybank.herokuapp.com" target="_blank" class=""><i class="fa fa-external-link-square projectFA" aria-hidden="true"></i></a></span>
+                    <span><a href="https://github.com/ryanwaits/tidy_bank/blob/master/app/controllers/child_sessions_controller.rb" target="_blank"><i class="fa fa-github projectFA"></i></a></span></h2>
                     <p>Ruby on Rails, Bcrypt, Canva</p>
                 </div>
                 <div class="col-md-6 projDesc">
                     <p>A web app with user auth for parents and kids that assigns chores and awards points upon completion of a task.</p>
+                </div>
+            </div>
+             <div class="row projShort">
+                <div class="col-md-6">
+                    <h2>
+                    <span class="appName">macwimberly.com</span>
+                    <span><a href="https://github.com/macwimberly/personal_site" target="_blank"><i class="fa fa-github projectFA"></i></a></span>
+                    </h2>
+                    <p>Bootstrap, JS, jQuery</p>
+                </div>
+                <div class="col-md-6 projDesc">
+                    <p>My personal site done with responsive design.</p>
                 </div>
             </div>
         </div>

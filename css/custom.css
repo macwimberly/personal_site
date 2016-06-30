@@ -51,6 +51,7 @@ h1 {
 
 h2 {
     margin-top: 0;
+    margin-bottom: 0;
     text-align: left;
     font-size: 2em;
 }
@@ -81,22 +82,8 @@ hr {
 
 .modal-content{
   background-color: #ffe4c2;
-
-
 }
 
-
-/*hr.left {
-
-
-  width: 80%;
-
-}
-
-hr.right {
-  ;
-  width: 80%;
-}*/
 
 a {
     color: black;
@@ -122,6 +109,7 @@ a:visited {
     color: black;
 }
 
+
 #CW {
     opacity: .45;
     height: 100%;
@@ -134,6 +122,17 @@ a:visited {
 p::selection {
     color: green;
 }
+
+.pointer {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
 
 #nav {
     /*font-family: 'carosello';*/
@@ -149,15 +148,6 @@ p::selection {
     justify-content: center;
 }
 
-span {
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.bold {
-  font-weight: bold;
-  font-size: 1.25em;
-}
 
 #face {
     zoom: 2;
@@ -191,13 +181,21 @@ span {
 }
 
 .projDiv {
-    font-size: .35em;
+    font-size: .30em;
     text-align: left;
     width: 65%;
     margin: 0 auto;
     height: 90vh;
     color: black;
     margin-top: 75px;
+}
+
+.projLong {
+  margin-bottom: 35px;
+}
+
+.projShort {
+  margin-bottom: 50px;
 }
 
 .projDesc {
@@ -210,8 +208,13 @@ span {
 }
 
 .appName {
-    font-size: .5em;
+    font-size: .7em;
+    font-weight: bold;
     text-align: left;
+}
+
+.rightAl{
+  text-align: right;
 }
 
 #resDiv {
@@ -275,6 +278,11 @@ ul {
 .fa {
     color: black;
     font-size: 40px;
+}
+
+.projectFA{
+  font-size: 25px;
+  margin-right: 0;
 }
 
 .fa:hover {
